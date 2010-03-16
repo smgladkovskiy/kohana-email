@@ -3,7 +3,7 @@ Email Module For Kohana 3.0
 
 This is a direct port of the email helper from Kohana 2.3.3 source code.
 
-It has been updated to work with SwiftMailer 4 and includes the libs dir from the 4.0.4 distribution.
+It has been updated to work with SwiftMailer 4 and includes it as a submodule.
 
 Usage should be exactly as with old helper.
 
