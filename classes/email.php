@@ -27,7 +27,7 @@ class Email {
 		if ( ! class_exists('Swift_Mailer', FALSE))
 		{
 			// Load SwiftMailer
-			require Kohana::find_file('vendor', 'swift/swift_required');
+			require Kohana::find_file('vendor', 'swiftmailer/lib/swift_required');
 		}
 
 		// Load default configuration
@@ -83,7 +83,7 @@ class Email {
 	public static function send($to, $from, $subject, $message, $html = FALSE)
 	{
 		// Connect to SwiftMailer
-		(Email::$mail === NULL) and email::connect();
+		(Email::$mail === NULL) and Email::connect();
 
 		// Determine the message type
 		$html = ($html === TRUE) ? 'text/html' : 'text/plain';
