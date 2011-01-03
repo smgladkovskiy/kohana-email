@@ -27,7 +27,7 @@ class Kohana_Email {
 		if ( ! class_exists('Swift_Mailer', FALSE))
 		{
 			// Load SwiftMailer
-			require Kohana::find_file('vendor', 'swift/swift_required');
+			require Kohana::find_file('vendor', 'swiftmailer/lib/swift_required');
 		}
 
 		// Load default configuration
