@@ -1,3 +1,4 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php defined('SYSPATH') OR die('No direct access allowed.');
 
-class Email extends Kohana_Email {}
+class Email extends Email_Core {}
+
